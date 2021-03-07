@@ -1,0 +1,21 @@
+uuid: 00ffb119-6654-40eb-8f4b-34943c16d629
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_testimonial_quote
+    - node.type.testimonials
+  module:
+    - text
+id: node.testimonials.field_testimonial_quote
+field_name: field_testimonial_quote
+entity_type: node
+bundle: testimonials
+label: 'Testimonial Quote'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
