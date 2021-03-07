@@ -1,0 +1,23 @@
+uuid: b26fc412-46d2-4cf1-b76b-f072bd41252c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rank
+    - node.type.testimonials
+  module:
+    - options
+id: node.testimonials.field_rank
+field_name: field_rank
+entity_type: node
+bundle: testimonials
+label: Rank
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 2
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

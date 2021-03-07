@@ -1,0 +1,19 @@
+uuid: 276f30d9-2239-4ec4-9df8-4d20d20b6c19
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_testimonial_quote
+field_name: field_testimonial_quote
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
