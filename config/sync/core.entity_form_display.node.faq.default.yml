@@ -1,31 +1,28 @@
-uuid: ac69837d-784f-44fd-9f62-79493be991df
+uuid: 65170dec-88e8-4cc2-bb63-0e514dcccb62
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.page.body
-    - field.field.node.page.layout_builder__layout
-    - node.type.page
+    - field.field.node.faq.body
+    - node.type.faq
   module:
     - path
     - text
-_core:
-  default_config_hash: AD_lefuYmjsKeH3OQApsyP_nLj6ZnGaALznLQSQ0Z_o
-id: node.page.default
+id: node.faq.default
 targetEntityType: node
-bundle: page
+bundle: faq
 mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 31
-    region: content
+    weight: 121
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
+    region: content
   created:
     type: datetime_timestamp
     weight: 10
@@ -70,12 +67,11 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 5
-    region: content
     settings:
       match_operator: CONTAINS
-      match_limit: 10
       size: 60
       placeholder: ''
+      match_limit: 10
+    region: content
     third_party_settings: {  }
-hidden:
-  layout_builder__layout: true
+hidden: {  }
