@@ -1,0 +1,22 @@
+uuid: 1516efc6-e1df-4141-8729-355e74beea5c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - port16
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: port16_content
+theme: port16
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

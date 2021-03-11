@@ -1,0 +1,22 @@
+uuid: 56330972-86ee-4ff0-8b88-8f134fd02d2a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - port16
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: port16_messages
+theme: port16
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

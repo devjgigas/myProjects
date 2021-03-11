@@ -1,0 +1,22 @@
+uuid: 3b3ec2a6-bbfd-45ab-857f-4e48d669ecfa
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - port16
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: port16_help
+theme: port16
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

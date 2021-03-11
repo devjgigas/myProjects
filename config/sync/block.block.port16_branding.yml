@@ -1,0 +1,25 @@
+uuid: 95da4051-1634-473b-a04f-1c8ec03b4190
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - port16
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: port16_branding
+theme: port16
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }
