@@ -162,6 +162,8 @@ hooks:
    - exec: sudo chmod -R 777 /usr/local/bin/composer
    - exec: composer self-update 2>/dev/null
    - exec: composer self-update --2
+   - exec: cd /var/www/html/web/themes/custom/*ort1*/ && npm rebuild node-sass
+
 # post-import-db:
 #
 #   - exec: drush updb
