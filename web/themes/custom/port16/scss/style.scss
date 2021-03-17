@@ -1,4 +1,4 @@
-/* 
+/*
 Theme Name: Bootstrap 4 Sass
 Description: Bootstrap 4 with Sass
 */
@@ -8,13 +8,61 @@ Description: Bootstrap 4 with Sass
 
 /* GENERAL STYLES
 -------------------------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 body {
     background: $white;
 }
 
+.testimonial_container {
+  display: flex;
+  width: 1100px;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(
+131deg, #0ca383, #351548);
+padding: 100px;
+align-items: center;
+text-align: center;
+}
 
-/* COLORS 
+.quote-icon {
+  width: 58px;
+  color: white;
+}
+.author-info {
+  display: flex;
+  width: 30%;
+  justify-content: space-evenly;
+  // justify-content: center;
+  color: lightblue;
+  font-weight: bold;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -20px;
+}
+.field--name-field-testimonial-quote {
+  color: white;
+  margin: 50px 200px;
+}
+
+.separator {
+  background-color: #d3d3d3;
+  width: 30px;
+  height: 1px;
+}
+.author-url a {
+  color: lightblue;
+}
+
+:any-link {
+  color: lightblue;
+}
+/* COLORS
 --------------------------------------------------*/
 
 a {

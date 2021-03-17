@@ -73,16 +73,23 @@
   ]
 %}
 <article{{ attributes.addClass(classes) }}>
-  <header>
+  {# <header>
     {{ title_prefix }}
     {{ title_suffix }}
-  </header>
+  </header> #}
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
-    {{ content.field_testimonial_quote }}
+ <div class="testimonial_container">
+    <div><img src="https://uploads-ssl.webflow.com/601241272b1bcc22640fc237/60124128cd276f5ef8841187_quotation.svg" alt="" class="quote-icon" width="58">
+    </div>
+    <h3>{{ content.field_testimonial_quote }}</h3>
+    <div class="author-info">
     <div class="author-url">
       {{ content.field_testimonial_author }}
-      <span class="separator"> ___ </span>
-      {{ content.field_author_url }}
+      </div>
+      <div class="separator"></div>
+      <div>{{ content.field_author_url }}
     </div>
+    </div>
+  </div>
   </div>
 </article>
