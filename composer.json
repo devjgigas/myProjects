@@ -19,6 +19,7 @@
         "drupal/admin_toolbar": "^3.0",
         "drupal/bootstrap_barrio": "^5.1",
         "drupal/bootstrap_sass": "^5.0",
+        "drupal/components": "^2.2",
         "drupal/core-composer-scaffold": "^8.9",
         "drupal/core-dev": "^8.9",
         "drupal/core-project-message": "^8.9",
