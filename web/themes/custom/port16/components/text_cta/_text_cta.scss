@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@mixin div-display {
+    display: flex;
+    justify-content: center;
+}
+@mixin cta-buttons {
+    border: solid;
+    border-color: #351548;
+    text-decoration: none;
+    padding: 20px 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Gothic A1', sans-serif;
+}
+div.section-cta {
+    @include div-display;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.01)), color-stop(73%, #351548)), url("https://uploads-ssl.webflow.com/601241272b1bcc22640fc237/60124ed060d9c303a0648283_inspiration-geometry.png");
+    background-color: #351548;
+}
+div.text-cta {
+    @include div-display;
+}            
+div.text-cta h2 {
+    font-family: 'Gothic A1', sans-serif;
+    color: $white;
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 700;            
+}
+div.buttons-cta {
+    @include div-display;
+    padding-top: 20px;
+}            
+div.left-button-cta {
+    padding-right: 5px;
+}
+div.left-button-cta a.email-button-cta {
+    @include cta-buttons;
+    background-color: #0ca383 ;
+    color: $white;    
+}            
+div.left-button-cta a.email-button-cta:hover {
+    background-color: $white;
+    color: rgb(133, 129, 129);
+}
+div.right-button-cta {
+    padding-left:  5px;
+}
+div.right-button-cta a.other-button-cta { 
+    @include cta-buttons;
+    background-color: $white;
+    color: #351548;
+}
+div.right-button-cta a.other-button-cta:hover {
+    background-color: #0ca383 ;
+    color: $white;
+}
+    
