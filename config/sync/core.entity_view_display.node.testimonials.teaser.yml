@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.testimonials.field_testimonial_quote
     - node.type.testimonials
   module:
+    - link
     - text
     - user
 id: node.testimonials.teaser
@@ -19,22 +20,35 @@ targetEntityType: node
 bundle: testimonials
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
+  field_author_url:
+    type: link
+    weight: 2
     region: content
-  links:
-    weight: 100
+    label: visually_hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_testimonial_author:
+    type: string
+    weight: 1
+    region: content
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_testimonial_quote:
+    type: text_default
+    weight: 0
+    region: content
+    label: visually_hidden
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
-  field_author_url: true
+  body: true
   field_preview_image: true
   field_rank: true
-  field_testimonial_author: true
-  field_testimonial_quote: true
+  links: true
