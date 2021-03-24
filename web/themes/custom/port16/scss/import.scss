@@ -13,3 +13,5 @@
 @import "mixins";
 // barrio
 @import "barrio";
+// ensures new .scss file gets compiled to sass
+@import "../components/text_cta/_text_cta";
