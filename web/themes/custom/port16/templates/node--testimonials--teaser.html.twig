@@ -73,17 +73,11 @@
   ]
 %}
 <article{{ attributes.addClass(classes) }}>
-
-  <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
-    <div class="testimonial_container">
-      <div><img src="https://uploads-ssl.webflow.com/601241272b1bcc22640fc237/60124128cd276f5ef8841187_quotation.svg" alt="" class="quote-icon" width="58">
-      </div>
-      <h3>{{ content.field_testimonial_quote }}</h3>
-      <div class="author-info">
-        {{ content.field_testimonial_author }}
-        <div class="separator"></div>
-        <div>{{ content.field_author_url }}</div>
-      </div>
+    <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
+    {% embed "@myComponents/testimonial_teaser/_testimonial_teaser.html.twig" with {
+      author_url: content.field_author_url,
+      testimonial_author: content.field_testimonial_author,
+      testimonial_quote: content.field_testimonial_quote
+    } %}{% endembed %}
     </div>
-  </div>
 </article>
