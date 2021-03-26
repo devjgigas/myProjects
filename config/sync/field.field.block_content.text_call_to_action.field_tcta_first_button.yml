@@ -1,0 +1,28 @@
+uuid: f19ad313-6c18-480a-a152-f268fe47725f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_call_to_action
+    - field.storage.block_content.field_tcta_first_button
+  module:
+    - link
+id: block_content.text_call_to_action.field_tcta_first_button
+field_name: field_tcta_first_button
+entity_type: block_content
+bundle: text_call_to_action
+label: 'TCTA first button'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'http://google.com'
+    title: Google
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

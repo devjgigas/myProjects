@@ -1,0 +1,40 @@
+uuid: 681e66ee-65be-4124-af79-12d1bec936b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_call_to_action
+    - field.field.block_content.text_call_to_action.field_tcta_first_button
+    - field.field.block_content.text_call_to_action.field_tcta_second_button
+  module:
+    - link
+id: block_content.text_call_to_action.default
+targetEntityType: block_content
+bundle: text_call_to_action
+mode: default
+content:
+  field_tcta_first_button:
+    weight: 27
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_tcta_second_button:
+    weight: 28
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
