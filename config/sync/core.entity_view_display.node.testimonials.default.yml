@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.testimonials.body
     - field.field.node.testimonials.field_author_url
     - field.field.node.testimonials.field_preview_image
     - field.field.node.testimonials.field_rank
@@ -21,13 +20,6 @@ targetEntityType: node
 bundle: testimonials
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 101
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_author_url:
     weight: 105
     label: above
