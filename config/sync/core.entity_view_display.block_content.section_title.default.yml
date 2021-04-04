@@ -1,0 +1,24 @@
+uuid: 75d42dc2-60cb-458a-9a20-4fcc9f34fb7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.section_title
+    - field.field.block_content.section_title.field_icon
+  module:
+    - image
+id: block_content.section_title.default
+targetEntityType: block_content
+bundle: section_title
+mode: default
+content:
+  field_icon:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

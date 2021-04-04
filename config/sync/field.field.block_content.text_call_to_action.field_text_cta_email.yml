@@ -1,0 +1,21 @@
+uuid: f50156b4-97e0-4427-891f-da825f5739aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_call_to_action
+    - field.storage.block_content.field_text_cta_email
+id: block_content.text_call_to_action.field_text_cta_email
+field_name: field_text_cta_email
+entity_type: block_content
+bundle: text_call_to_action
+label: 'Text cta email'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: test@yahoo.com
+default_value_callback: ''
+settings: {  }
+field_type: email

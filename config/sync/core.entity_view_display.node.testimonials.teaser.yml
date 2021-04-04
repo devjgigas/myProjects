@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.testimonials.body
     - field.field.node.testimonials.field_author_url
     - field.field.node.testimonials.field_preview_image
     - field.field.node.testimonials.field_rank
@@ -48,7 +47,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  body: true
   field_preview_image: true
   field_rank: true
   links: true

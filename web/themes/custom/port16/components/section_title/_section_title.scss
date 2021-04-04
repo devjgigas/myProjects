@@ -1,0 +1,20 @@
+div.section-title-block {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    div.icon {
+        margin-left: auto;
+        margin-right: auto;
+        width: 60px;
+    }
+    div.title {
+        font-family: Lora, sans-serif;
+        color: #351548;
+        font-size: 50px;
+        line-height: 60px;
+        font-weight: 400;
+        text-align: center;
+  }
+}
