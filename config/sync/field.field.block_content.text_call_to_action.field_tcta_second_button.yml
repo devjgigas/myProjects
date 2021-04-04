@@ -1,0 +1,28 @@
+uuid: 99c2f271-3d96-4505-9e7d-551bd4c6a97a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_call_to_action
+    - field.storage.block_content.field_tcta_second_button
+  module:
+    - link
+id: block_content.text_call_to_action.field_tcta_second_button
+field_name: field_tcta_second_button
+entity_type: block_content
+bundle: text_call_to_action
+label: 'TCTA second button'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'http://yahoo.com'
+    title: Yahoo
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link
