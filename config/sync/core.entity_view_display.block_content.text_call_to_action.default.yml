@@ -1,0 +1,55 @@
+uuid: bbac9d6c-f9dd-4f7f-be38-013ba06a921a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_call_to_action
+    - field.field.block_content.text_call_to_action.field_text_cta_email
+    - field.field.block_content.text_call_to_action.field_text_cta_image
+    - field.field.block_content.text_call_to_action.field_text_cta_link
+    - field.field.block_content.text_call_to_action.field_text_cta_title
+  module:
+    - image
+    - link
+    - text
+id: block_content.text_call_to_action.default
+targetEntityType: block_content
+bundle: text_call_to_action
+mode: default
+content:
+  field_text_cta_email:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_text_cta_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_text_cta_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_text_cta_title:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

@@ -1,0 +1,8 @@
+uuid: a4e178a3-d18c-4602-a344-8cc94315bf43
+langcode: en
+status: true
+dependencies: {  }
+id: text_call_to_action
+label: 'Text Call to Action'
+revision: 0
+description: ''

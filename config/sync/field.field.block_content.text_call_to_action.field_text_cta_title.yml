@@ -1,0 +1,21 @@
+uuid: c65c062e-36db-42d8-9c6a-ecea25f46b76
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_call_to_action
+    - field.storage.block_content.field_text_cta_title
+  module:
+    - text
+id: block_content.text_call_to_action.field_text_cta_title
+field_name: field_text_cta_title
+entity_type: block_content
+bundle: text_call_to_action
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
