@@ -1,11 +1,3 @@
-{% embed '@bootstrap_barrio/layout/page.html.twig' %}
-  {#
-   # This "embed" statement will copy the code from page.html.twig.
-   #
-   # To overwrite specific named twig blocks from page.html.twig,
-   # create new twig blocks (using the same name) within this file's embed.
-   #}
-  {% block content %}
     {% embed '@myComponents/text_cta/_text_cta.html.twig' with {
     project_type: 'Drupal 8',
     text: 'Want to Work With Me?',
@@ -15,5 +7,3 @@
     secondary_link_text: 'Other Ways To Connect'
     } %}
     {% endembed %}
-  {% endblock %}
-{% endembed %}
