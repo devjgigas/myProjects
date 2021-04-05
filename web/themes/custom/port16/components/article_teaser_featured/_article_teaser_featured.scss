@@ -1,0 +1,85 @@
+.component-article-featured {
+    display: block;
+    font-family: Lora, sans-serif;
+    color: #6b6b6b;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+
+    .top-bar{
+        min-height: 130px;
+        align-items: center;
+    }
+
+    a {
+        color: #1c808b;
+        text-decoration: underline;
+    }
+
+    .article-container {
+    background-image: url("https://uploads-ssl.webflow.com/601241272b1bcc22640fc237/60124fe84dc9591a1533ada7_blog-image-02.jpg");
+    width: 100%;
+    min-height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    .title-wrapper {
+        max-width: 700px;
+        margin-top: 300px;
+        margin-bottom: -250px;
+        padding: 44px 54px 54px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        background-image: linear-gradient(180deg, #0ca383 40%, hsla(0, 0%, 100%, 0));
+        }
+    }
+    .section-wide-img {
+    background-color: #0ca383;
+    background-image: linear-gradient(180deg, #0ca383, hsla(0, 0%, 100%, 0.09)), url(https://uploads-ssl.webflow.com/601241272b1bcc22640fc237/60124ed060d9c303a0648283_inspiration-geometry.png);
+    background-position: 0px 0px, 0px 0px;
+    min-height: 250px;
+    background-size: auto, auto;
+    }
+
+    .smalltext {
+        display: inline-block;
+        margin-right: 8px;
+        padding-bottom: 5px;
+        border-bottom: 1px none #2e2e2e;
+        color: #351548;
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    h2 {
+      font-family: 'Gothic A1', sans-serif;
+      color: #fff;
+      font-size: 38px;
+      line-height: 48px;
+      font-weight: 700;
+    }
+    .col-wrapper {
+      display: block;
+      max-width: 310px;
+      margin: 0 auto;
+    }
+
+    a.button {
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 10px;
+        margin-right: 0px;
+        padding: 20px 40px;
+        border-radius: 3px;
+        background-color: #351548;
+        font-weight: 600;
+    }
+    a.button:hover {
+        color: #0ca383;
+        background-color: #fff;
+        }
+  }

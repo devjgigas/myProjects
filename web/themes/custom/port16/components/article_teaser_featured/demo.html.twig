@@ -1,0 +1,19 @@
+{% embed '@bootstrap_barrio/layout/page.html.twig' %}
+  {#
+   # This "embed" statement will copy the code from page.html.twig.
+   #
+   # To overwrite specific named twig blocks from page.html.twig,
+   # create new twig blocks (using the same name) within this file's embed.
+   #}
+{% block content %}
+  {% embed '@myComponents/article_teaser_featured/_article_teaser_featured.html.twig' with {
+    top_title: 'The featured layout of a Project Card on the homepage.',
+    top_link_url: 'https://s16-theme.webflow.io/component-library#',
+    top_link_text: 'The full view of this Content Type will have its own layout, to be styled according to this page.',
+    article: 'FEATURED ARTICLE',
+    title: 'Article Name Will Appear in this Space with a Large Button Below',
+    link_url: 'https://s16-theme.webflow.io/component-library#',
+    link_text: 'View Work'
+  } %}{% endembed %}
+{% endblock %}
+{% endembed %}
