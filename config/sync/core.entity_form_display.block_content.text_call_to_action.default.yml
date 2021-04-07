@@ -6,6 +6,7 @@ dependencies:
     - block_content.type.text_call_to_action
     - field.field.block_content.text_call_to_action.field_tcta_first_button
     - field.field.block_content.text_call_to_action.field_tcta_second_button
+    - field.field.block_content.text_call_to_action.field_tcta_text
   module:
     - link
 id: block_content.text_call_to_action.default
@@ -16,18 +17,26 @@ content:
   field_tcta_first_button:
     weight: 27
     settings:
-      placeholder_url: ''
-      placeholder_title: ''
+      placeholder_url: 'http://google.com'
+      placeholder_title: Google
     third_party_settings: {  }
     type: link_default
     region: content
   field_tcta_second_button:
     weight: 28
     settings:
-      placeholder_url: ''
-      placeholder_title: ''
+      placeholder_url: 'http://yahoo.com'
+      placeholder_title: Yahoo
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_tcta_text:
+    weight: 29
+    settings:
+      size: 60
+      placeholder: 'Want to work with me?'
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   info:
     type: string_textfield
@@ -35,6 +44,6 @@ content:
     region: content
     settings:
       size: 60
-      placeholder: ''
+      placeholder: xyz
     third_party_settings: {  }
 hidden: {  }
