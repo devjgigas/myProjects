@@ -34,3 +34,4 @@
 .ddev/nginx_full/
 .ddev/php/
 .ddev/.homeadditions/
+.ddev/.gitignore
