@@ -27,3 +27,10 @@
 /.env
 
 .DS_Store
+.ddev/.global_commands/
+.ddev/.homeadditions/
+.ddev/apache/
+.ddev/commands/
+.ddev/nginx_full/
+.ddev/php/
+.ddev/.homeadditions/
