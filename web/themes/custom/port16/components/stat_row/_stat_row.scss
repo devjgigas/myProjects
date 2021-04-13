@@ -1,0 +1,32 @@
+
+
+h2{
+    color: #0ca383;
+   font-family: 'Gothic A1', sans-serif;
+   text-align: center;
+   padding-left:50px;
+}
+h3, p{
+    color: #6b6b6b;
+    font-family: 'Gothic A1', sans-serif;
+    text-align: center;
+    padding-left:50px;
+}
+p{
+    font-weight: lighter;
+}
+
+#stat-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top:30%;
+    
+   
+}
+@media only screen and (max-width: 600px) {
+    #stat-row{
+        display: grid;
+grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+grid-gap: 9px;
+    }
+}
