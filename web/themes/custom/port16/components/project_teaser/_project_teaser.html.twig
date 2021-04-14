@@ -1,11 +1,24 @@
+<div class="project-teaser-container">
 <div class="project-teaser-block">
-    <div class="icon">
-    {% if display_icon %}{{ image|raw }}{% endif %}
+  <div class="icon">
+    {% if display_icon %}{{ image_1|raw }}{% endif %}
     </div>
     <div class="project-teaser-info">
     <h6>{{ project_type }}</h6>
     <h1>{{ title }}</h1>
     <p>{{ text }}</p>
     <a href={{ link_url }}>{{ link_text }}</a>
+  </div>
+</div>
+<div class="project-teaser-block">
+  <div class="icon">
+    {% if display_icon %}{{ image_2|raw }}{% endif %}
+    </div>
+    <div class="project-teaser-info">
+    <h6>{{ project_type }}</h6>
+    <h1>{{ title }}</h1>
+    <p>{{ text }}</p>
+    <a href={{ link_url }}>{{ link_text }}</a>
+  </div>
 </div>
 </div>
