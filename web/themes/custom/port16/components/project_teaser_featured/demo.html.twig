@@ -1,0 +1,11 @@
+{% block content %}
+  {% embed '@myComponents/project_teaser_featured/_project_teaser_featured.html.twig' with {
+    title: 'Website for Debug Academy',
+    link_url: 'debugacademy.com',
+    link_text: 'View Work',
+    image: '<img src="/themes/custom/port16/components/project_teaser_featured/debug.png">'|raw,
+
+  }  %}{% endembed %}
+
+
+{% endblock %}

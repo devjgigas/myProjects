@@ -1,0 +1,63 @@
+.project_teaser_featured{
+    background-color: #0ca383;
+    text-align: center;
+    
+    
+
+    h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: 'Gothic A1', sans-serif;
+        color: #fff;
+        font-size: 38px;
+        line-height: 48px;
+        font-weight: 700;
+        padding-top: 50px;
+
+    }
+
+    .button {
+        
+        
+        
+
+        a{
+        background-color: #351548;
+        color: #fff;
+        display: inline-block;
+        border-radius: 3px;
+        transition: background-color 500ms cubic-bezier(.789, .159, .25, 1), color 200ms cubic-bezier(.789, .159, .25, 1);
+        font-family: 'Gothic A1', sans-serif;
+        color: #fff;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 600;
+        padding: 15px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+            &:hover{
+                background-color: #fff;
+                color:  #0ca383;
+            }
+        }
+
+
+    }
+    
+    .teaser_image{
+        img {
+            max-width: 90%;
+            margin-top: 50px;
+            @media (min-width: 1200px) {
+                max-width: 1200px;
+                
+            }
+        }
+
+
+    }
+
+
+    
+
+}
