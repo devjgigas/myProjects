@@ -1,0 +1,27 @@
+{% embed '@bootstrap_barrio/layout/page.html.twig' %}
+  {#
+  # This "embed" statement will copy the code from page.html.twig.
+  #
+  # To overwrite specific named twig blocks from page.html.twig,
+  # create new twig blocks (using the same name) within this file's embed.
+  #}
+  {% block footer %}
+    {% embed '@myComponents/logo_row/_logo_row.html.twig' with {
+      block_title1: 'Github',
+      img_url1: '/themes/custom/port16/components/logo_row/github.png',
+      alt_text1: 'some text',
+      block_text1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
+      block_title2: 'Drupal',
+      img_url2: '/themes/custom/port16/components/logo_row/drupal.png',
+      alt_text2: 'some text',
+      block_text2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
+      block_title3: 'HTML5',
+      img_url3: '/themes/custom/port16/components/logo_row/html5.png',
+      alt_text3: 'some text',
+      block_text3: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.'
+
+
+    } %}
+
+    {% endembed %}
+  {% endblock %}
