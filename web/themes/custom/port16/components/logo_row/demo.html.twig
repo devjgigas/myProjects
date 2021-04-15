@@ -5,7 +5,7 @@
   # To overwrite specific named twig blocks from page.html.twig,
   # create new twig blocks (using the same name) within this file's embed.
   #}
-  {% block footer %}
+  {% block content %}
     {% embed '@myComponents/logo_row/_logo_row.html.twig' with {
       block_title1: 'Github',
       img_url1: '/themes/custom/port16/components/logo_row/github.png',
@@ -25,3 +25,4 @@
 
     {% endembed %}
   {% endblock %}
+{% endembed %}
