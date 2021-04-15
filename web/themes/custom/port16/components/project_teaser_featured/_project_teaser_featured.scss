@@ -1,6 +1,7 @@
 .project_teaser_featured{
     background-color: #0ca383;
     text-align: center;
+    width: 100%;
     
     
 
@@ -45,11 +46,17 @@
     }
     
     .teaser_image{
+        max-width: 90%;
+        display: inline-block;
+        
         img {
-            max-width: 90%;
+            width: 100%;
             margin-top: 50px;
+            margin-bottom: 0;
+            height: auto;
             @media (min-width: 1200px) {
                 max-width: 1200px;
+
                 
             }
         }
