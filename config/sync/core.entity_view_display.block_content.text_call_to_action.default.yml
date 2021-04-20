@@ -6,6 +6,7 @@ dependencies:
     - block_content.type.text_call_to_action
     - field.field.block_content.text_call_to_action.field_tcta_first_button
     - field.field.block_content.text_call_to_action.field_tcta_second_button
+    - field.field.block_content.text_call_to_action.field_tcta_text
   module:
     - link
 id: block_content.text_call_to_action.default
@@ -36,5 +37,13 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+    region: content
+  field_tcta_text:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
 hidden: {  }

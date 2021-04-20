@@ -1,0 +1,19 @@
+<div{{ attributes }}>
+    {{ title_prefix }}{{ title_suffix }}
+    {% embed '@myComponents/text_cta/_text_cta.html.twig' 
+    with {
+    text: content.field_tcta_text,
+    primary_link_url: content.field_tcta_first_button.0['#url'],
+    primary_link_text: content.field_tcta_first_button.0['#title'],
+    secondary_link_url: content.field_tcta_second_button.0['#url'],
+    secondary_link_text: content.field_tcta_second_button.0['#title']
+    } 
+    %}
+    {% endembed %}
+    
+</div>
+
+
+
+
+
