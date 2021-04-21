@@ -1,0 +1,15 @@
+uuid: fb2ee69b-6690-4ef3-9aec-6f75b4374534
+langcode: en
+status: true
+dependencies: {  }
+name: tall_wide
+label: 'tall wide (height 500)'
+effects:
+  dcaf40a3-2d23-4fe6-9f8e-f6490a20b6c1:
+    uuid: dcaf40a3-2d23-4fe6-9f8e-f6490a20b6c1
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 500
+      upscale: false

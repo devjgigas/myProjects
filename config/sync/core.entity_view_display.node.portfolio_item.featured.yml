@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.portfolio_item.field_portfolio_item_s_url
     - field.field.node.portfolio_item.field_preview_image
     - field.field.node.portfolio_item.field_rank
+    - field.field.node.portfolio_item.field_tags
     - node.type.portfolio_item
   module:
     - image
@@ -42,3 +43,4 @@ hidden:
   field_header_image: true
   field_portfolio_item_s_url: true
   field_rank: true
+  field_tags: true
