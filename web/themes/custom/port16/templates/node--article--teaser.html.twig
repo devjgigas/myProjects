@@ -1,0 +1,25 @@
+{%
+  set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+    'clearfix',
+  ]
+%}
+<article{{ attributes.addClass(classes) }}>
+    {{ title_prefix }}    {{ title_suffix }}
+    <!-- The component will be placed here -->
+{% embed '@myComponents/blog_teaser/_blog_teaser.html.twig' with {
+    article: 'RECENT ARTICLE',
+    title: label,
+    description1: content.body,
+    link_text: 'Full Article',
+    link_url: url,
+    image: content.field_image
+  } %}
+  {% endembed %}
+
+</article>
