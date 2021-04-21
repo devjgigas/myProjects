@@ -75,15 +75,9 @@
 <article{{ attributes.addClass(classes) }}>
     {{ title_prefix }}    {{ title_suffix }}
     {% embed '@myComponents/blog_teaser/_blog_teaser.html.twig' with {
-    top_title:  label,
-    top_link_url: URL,
-    top_link_text: 'The full view of this Content Type will have its own layout, to be styled according to this page.',
-    article: 'Recent Article | ' ~ node.field_public_date.0.value|date('U')|format_date('month_day_year'),
+    above_title: 'Recent Article | ' ~ node.field_public_date.0.value|date('U')|format_date('month_day_year'),
     title: label,
-    description1: content.body,
-    inside_link_url: url,
-    inside_link_text: 'Cras mattis consectetur',
-    description2: content.body,
+    description: content.body,
     link_text: 'Full Article',
     link_url: url,
     image: content.field_image,
