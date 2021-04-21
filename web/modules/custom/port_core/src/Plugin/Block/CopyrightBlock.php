@@ -20,7 +20,8 @@ class CopyrightBlock extends BlockBase {
    */
   public function build() {
     $build['content'] = [
-      '#markup' => $this->t('It works!'),
+      '#theme' => 'port_core_copyright',
+      '#current_year' => date('Y'),
     ];
     return $build;
   }
