@@ -1,0 +1,16 @@
+.d-inline-block {
+  width: 150px;
+}
+#header {
+  background-image: url('../images/header-pattern.png'), linear-gradient(117deg, #0ca383, #350e47);
+}
+#navbar-main {
+  max-width: 1066px;
+  margin: 0 auto;
+  a {
+    color: white;
+    &:hover {
+      box-shadow: inset 0 -6px 0 0 white;
+    }
+  }
+}
