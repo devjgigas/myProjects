@@ -1,0 +1,4 @@
+administer pwd configuration:
+  title: 'Administer pwd configuration'
+  description: 'Optional description.'
+  restrict access: true

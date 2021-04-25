@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for pwd module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+function pwd_node_access(\Drupal\Core\Entity\EntityInterface $entity, $operation, \Drupal\Core\Session\AccountInterface $account) {
+  // If an entity has the field "field_password" 
+  if ($entity->hasField('field_password')) {
+    if (!$entity->get('field_password')->isEmpty()) {
+      // This node has field_password
+      // And field_password has a value.
+
+      $password_from_node = $entity->get('field_password')->getString();
+      $password_from_url = $_GET['privateToken'];
+
+      if ($password_from_node != $password_from_url) {
+        return \Drupal\Core\Access\AccessResult::forbidden();
+      }
+      else {
+        return \Drupal\Core\Access\AccessResult::allowed();
+      }
+    }
+  }
+
+  return \Drupal\Core\Access\AccessResult::neutral();
+
+}
+
