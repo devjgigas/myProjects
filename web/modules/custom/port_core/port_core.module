@@ -1,0 +1,14 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+function port_core_theme() {
+  return [
+    'port_core_copyright' => [
+      'variables' => [
+        'current_year' => NULL
+      ],
+      'template' => 'block--footer-custom',
+    ],
+  ];
+}
