@@ -1,0 +1,11 @@
+uuid: 75455aae-b6a7-405e-921a-bd1231d7b5da
+langcode: en
+status: true
+dependencies: {  }
+id: purple_background
+label: 'Purple background'
+classes: section-bg-purple
+type: section
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

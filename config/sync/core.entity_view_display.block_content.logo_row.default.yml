@@ -7,6 +7,7 @@ dependencies:
     - field.field.block_content.logo_row.body
     - field.field.block_content.logo_row.field_logo
     - field.field.block_content.logo_row.field_logo_title
+    - image.style.small_thumbnail_50x50_
   module:
     - image
     - text
@@ -26,7 +27,7 @@ content:
     weight: 0
     label: visually_hidden
     settings:
-      image_style: ''
+      image_style: small_thumbnail_50x50_
       image_link: ''
     third_party_settings: {  }
     type: image

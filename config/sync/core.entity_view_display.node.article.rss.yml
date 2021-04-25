@@ -26,5 +26,6 @@ hidden:
   body: true
   comment: true
   field_image: true
+  field_password: true
   field_public_date: true
   field_tags: true

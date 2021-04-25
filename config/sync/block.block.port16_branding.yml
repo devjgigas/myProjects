@@ -11,7 +11,7 @@ _core:
 id: port16_branding
 theme: port16
 region: header
-weight: 0
+weight: -6
 provider: null
 plugin: system_branding_block
 settings:

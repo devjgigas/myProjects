@@ -2,14 +2,16 @@ uuid: 33d94449-863d-43c7-8756-a0a7e4b776eb
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - port16
 _core:
   default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
 id: port16_page_title
 theme: port16
-region: content
-weight: -50
+region: header
+weight: -5
 provider: null
 plugin: page_title_block
 settings:
@@ -17,4 +19,9 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

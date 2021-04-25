@@ -1,0 +1,15 @@
+uuid: 17daea51-c81c-4a74-b010-e76c624d99d0
+langcode: en
+status: true
+dependencies: {  }
+name: small_thumbnail_50x50_
+label: 'Small thumbnail (50x50)'
+effects:
+  a75f67c6-25c9-4f34-ad4c-95edf5bcb028:
+    uuid: a75f67c6-25c9-4f34-ad4c-95edf5bcb028
+    id: image_scale
+    weight: 1
+    data:
+      width: 200
+      height: null
+      upscale: false
