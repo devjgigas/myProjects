@@ -1,0 +1,21 @@
+uuid: be4bd986-2f4d-473f-a3d5-4014863dcb35
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.logo_row
+    - field.storage.block_content.field_logo_title
+  module:
+    - text
+id: block_content.logo_row.field_logo_title
+field_name: field_logo_title
+entity_type: block_content
+bundle: logo_row
+label: 'Logo Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

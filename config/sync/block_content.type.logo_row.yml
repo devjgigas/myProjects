@@ -1,0 +1,8 @@
+uuid: 40b760e4-c5e8-4856-bf3f-bdc2ec940275
+langcode: en
+status: true
+dependencies: {  }
+id: logo_row
+label: 'Logo Row'
+revision: 0
+description: ''
