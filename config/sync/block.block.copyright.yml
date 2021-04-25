@@ -1,0 +1,20 @@
+uuid: c9851b49-4552-4a61-8cdd-8731702acb42
+langcode: en
+status: true
+dependencies:
+  module:
+    - port_core
+  theme:
+    - port16
+id: copyright
+theme: port16
+region: footer_second
+weight: 0
+provider: null
+plugin: port_core_copyright
+settings:
+  id: port_core_copyright
+  label: Copyright
+  provider: port_core
+  label_display: '0'
+visibility: {  }

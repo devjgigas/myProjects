@@ -1,0 +1,21 @@
+{% block content %}
+	{% embed '@myComponents/stat_row/_stat_row.html.twig' with {
+    title: '+12K',
+    statistic: 'Lines of Code',
+    description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
+
+    title2: '84',
+    statistic2: 'Cups of Coffee',
+    description2: 'Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus.',
+
+    title3: '307',
+    statistic3: 'Bugs Fixes',
+    description3: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse Nunc ut sem vitae risus tristique posuere.',
+
+    title4: '24h',
+    statistic4: 'Response Window',
+    description4: 'Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla iuts.'
+
+  } %}{% endembed %}
+{% endblock %}
+

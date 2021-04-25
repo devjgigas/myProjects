@@ -59,27 +59,15 @@
  * @see template_preprocess_node()
  */
 #}
-{%
-  set classes = [
-    'node',
-    'node--type-' ~ node.bundle|clean_class,
-    node.isPromoted() ? 'node--promoted',
-    node.isSticky() ? 'node--sticky',
-    not node.isPublished() ? 'node--unpublished',
-    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
-    'clearfix',
-  ]
-%}
 <article{{ attributes.addClass(classes) }}>
-  {{ title_prefix }}    {{ title_suffix }}
-  {% embed '@myComponents/blog_teaser/_blog_teaser.html.twig' with {
-    above_title: 'Recent Article | ' ~ node.field_public_date.0.value|date('U')|format_date('month_day_year'),
+<div{{ content_attributes.addClass('node__content', 'clearfix') }}>
+  {% embed '@myComponents/project_teaser_featured/_project_teaser_featured.html.twig' with {
     title: label,
-    description: content.body,
-    link_text: 'Full Article',
     link_url: url,
-    image: content.field_image,
+    link_text: "View Work",
+    image: content.field_preview_image
+  }  %}{% endembed %}
+  </article>
+  </div>
 
-    } %}
-  {% endembed %}
-</article>
+

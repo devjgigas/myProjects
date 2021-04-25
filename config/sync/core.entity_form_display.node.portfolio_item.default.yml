@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.portfolio_item.field_portfolio_item_s_url
     - field.field.node.portfolio_item.field_preview_image
     - field.field.node.portfolio_item.field_rank
+    - field.field.node.portfolio_item.field_tags
     - image.style.thumbnail
     - node.type.portfolio_item
   module:
@@ -63,6 +64,16 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_tags:
+    weight: 128
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   path:
     type: path
