@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.portfolio_item.field_portfolio_item_s_url
     - field.field.node.portfolio_item.field_preview_image
     - field.field.node.portfolio_item.field_rank
+    - field.field.node.portfolio_item.field_tags
     - node.type.portfolio_item
   module:
     - image
@@ -64,9 +65,17 @@ content:
     third_party_settings: {  }
     type: list_default
     region: content
+  field_tags:
+    weight: 108
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }
