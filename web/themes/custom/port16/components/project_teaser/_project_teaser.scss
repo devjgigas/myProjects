@@ -1,3 +1,7 @@
+.view-content .views-row:nth-child(even) .project-teaser-block {
+  flex-direction: row;
+}
+
 div.project-teaser-container {
   max-width: 1750px;
   margin: 40px auto;
