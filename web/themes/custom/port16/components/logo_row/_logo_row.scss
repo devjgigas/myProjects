@@ -1,4 +1,11 @@
-div.layout__region.layout__region--second img {
+div.layout__region.layout__region--second
+  > div
+  > div.logo-container
+  > div.textblock
+  > div.iconheading
+  > div
+  > div.field__item
+  > img {
   max-width: 200px;
 }
 .logo-container {
@@ -24,8 +31,10 @@ div.layout__region.layout__region--second img {
     flex-direction: column;
     flex-direction: column;
     justify-content: center;
+
     .iconheading {
       margin-bottom: 32px;
+
       .art_img {
         max-width: 50px;
         height: 50px;
