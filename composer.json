@@ -21,10 +21,11 @@
         "drupal/bootstrap_sass": "^5.0",
         "drupal/components": "^2.2",
         "drupal/core-composer-scaffold": "^8.9",
-        "drupal/core-dev": "^8.9",
+        "drupal/core-dev": "8.9.5",
         "drupal/core-project-message": "^8.9",
         "drupal/core-recommended": "^8.9",
         "drupal/layout_builder_styles": "^1.0@beta",
+        "drupal/upgrade_status": "^3.5",
         "drush/drush": "^10.0"
     },
     "conflict": {
