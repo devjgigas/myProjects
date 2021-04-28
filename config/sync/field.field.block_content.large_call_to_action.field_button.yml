@@ -1,0 +1,23 @@
+uuid: 9f14cded-481e-4b6b-b505-7b611893537c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.large_call_to_action
+    - field.storage.block_content.field_button
+  module:
+    - link
+id: block_content.large_call_to_action.field_button
+field_name: field_button
+entity_type: block_content
+bundle: large_call_to_action
+label: Button
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link
