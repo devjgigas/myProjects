@@ -1,0 +1,24 @@
+.view-testimonials.view-id-testimonials.view-display-id-block_1 {
+  position: relative;
+
+  .views_slideshow_controls_text_previous, .views_slideshow_controls_text_next {
+    a {
+      position: absolute;
+      top: 30%;
+      z-index: 999;
+      opacity: 1;
+      text-indent: 100%;
+      overflow: hidden;
+      height: 58px;
+    }
+  }
+  
+  .views_slideshow_controls_text_previous a {
+    background-image: url('../images/arrow-left.png');
+    left: 20px;
+  }
+  .views_slideshow_controls_text_next a {
+    background-image: url('../images/arrow-right.png');
+    right: 20px;
+  }
+}
